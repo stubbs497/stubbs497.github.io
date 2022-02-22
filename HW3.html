@@ -16,7 +16,7 @@
                 <label for="birthday">When was Henry Morgan born?</label>
                 <input type="date" name="birthday" id="getbirthday" /><br />
                 <label for="getyear">What year did Henry Morgan sack Panama?</label>
-                <input type="number" name="yeat" id="getyear" min="1600" max="1700" /><br />
+                <input type="number" name="year" id="getyear" min="1600" max="1700" /><br />
                 <label for="getally">Who was Henry Morgan working for?</label>
                 <select name="allegiance" id="getally">
                     <option value="no selection">&mdash; Select one &mdash;</option>
@@ -54,8 +54,62 @@
                 <label for="getpassword">Guess the password:</label>
                 <input type="password" name="password" id="getpassword" />
                 <input type="hidden" name="hidden" id="gethidden"
-                    value="Unseen, unheard..." /><br />
+                    value="not here" /><br />
                 <input type="submit" /> <input type="reset" />
             </fieldset>
+        </form>
+        <h2>POST form</h2>
+        <form action="https://cs.converse.edu/CSC235/formecho.php"
+                method="post" name="postform" id="postform">
+             <fieldset>
+                <legend>Questions about Henry Morgan&hellip;</legend>
+                <label for="postjob">What was Henry Morgans occupation?</label>
+                <input type="text" name="name" id="postjob" /><br />
+                <label for="birthday">When was Henry Morgan born?</label>
+                <input type="date" name="birthday" id="postbirthday" /><br />
+                <label for="postyear">What year did Henry Morgan sack Panama?</label>
+                <input type="number" name="year" id="postyear" min="1600" max="1700" /><br />
+                <label for="postally">Who was Henry Morgan working for?</label>
+                <select name="allegiance" id="postally">
+                    <option value="no selection">&mdash; Select one &mdash;</option>
+                    <option>None</option>
+                    <option>Portugal</option>
+                    <option>Spain</option>
+                    <option>England</option>
+                    <option>Dutch</option>
+                </select><br />
+                <p>What was the name of Henry Morgans ship?</p>
+                <div>
+                    <input type="radio" name="ship" id="postsat" />
+                    <label for="postsat">Satisfaction</label><br />
+                    <input type="radio" name="ship" id="postfleece" />
+                    <label for="postfleece">The Golden Fleece</label><br />
+                    <input type="radio" name="ship" id="postanne" />
+                    <label for="postanne">Queen Anne's Revenge</label><br />
+                    <input type="radio" name="ship" id="posthind" />
+                    <label for="posthind">Golden Hind</label><br />
+                </div>
+                <p>Which of the following are true about Henry Morgan? (Check all that apply.)</p>
+                <div>
+                    <input type="checkbox" name="location" id="postlocation" />
+                    <label for="postloctaion">He was based in Port Royal, Jamacia</label><br />
+                    <input type="checkbox" name="married" id="postmarried" />
+                    <label for="postmarried">He was married</label><br />
+                    <input type="checkbox" name="loyalty" id="postloyal" />
+                    <label for="postloyal">He was loyal to Spain</label><br />
+                </div>
+                <label for="posttext">Thoughts on Henry Morgan?</label>
+                <textarea name="text" id="posttext" rows="5" cols="40">Add text here</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>post ready to submit</legend>
+                <label for="postpassword">Guess the password:</label>
+                <input type="password" name="password" id="postpassword" />
+                <input type="hidden" name="hidden" id="posthidden"
+                    value="not here" /><br />
+                <input type="submit" /> <input type="reset" />
+            </fieldset>
+        </form>
+
     </body>
 </html>
