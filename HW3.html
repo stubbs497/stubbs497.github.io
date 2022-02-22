@@ -18,7 +18,7 @@
                 <label for="getyear">What year did Henry Morgan sack Panama?</label>
                 <input type="number" name="yeat" id="getyear" min="1600" max="1700" /><br />
                 <label for="getally">Who was Henry Morgan working for?</label>
-                <select name="alligence" id="getally">
+                <select name="allegiance" id="getally">
                     <option value="no selection">&mdash; Select one &mdash;</option>
                     <option>None</option>
                     <option>Portugal</option>
@@ -37,8 +37,17 @@
                     <input type="radio" name="ship" id="gethind" />
                     <label for="gethind">Golden Hind</label><br />
                 </div>
+                <p>Which of the following are true about Henry Morgan? (Check all that apply.)</p>
+                <div>
+                    <input type="checkbox" name="location" id="getlocation" />
+                    <label for="getloctaion">He was based in Port Royal, Jamacia</label><br />
+                    <input type="checkbox" name="married" id="getmarried" />
+                    <label for="getmarried">He was married</label><br />
+                    <input type="checkbox" name="loyalty" id="getloyal" />
+                    <label for="getloyal">He was loyal to Spain</label><br />
+                </div>
                 <label for="gettext">Thoughts on Henry Morgan?</label>
-                <textarea name="text" id="gettext" rows="5" cols="40">Click to add text</textarea>
+                <textarea name="text" id="gettext" rows="5" cols="40">Add text here</textarea>
             </fieldset>
             <fieldset>
                 <legend>Get ready to submit</legend>
@@ -46,6 +55,7 @@
                 <input type="password" name="password" id="getpassword" />
                 <input type="hidden" name="hidden" id="gethidden"
                     value="Unseen, unheard..." /><br />
+                <input type="submit" /> <input type="reset" />
             </fieldset>
     </body>
 </html>
