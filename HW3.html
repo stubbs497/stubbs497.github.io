@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework Three, CSC 235</title>
+    </head>
+    <body>
+        <h1>Henry Morgan</h1>
+        <h2>GET form</h2>
+        <form action="https://cs.converse.edu/CSC235/formecho.php"
+                method="get" name="getform" id="getform">
+             <fieldset>
+                <legend>Questions about Henry Morgan&hellip;</legend>
+                <label for="getjob">What was Henry Morgans occupation?</label>
+                <input type="text" name="name" id="getjob" /><br />
+                <label for="birthday">When was Henry Morgan born?</label>
+                <input type="date" name="birthday" id="getbirthday" /><br />
+                <label for="getyear">What year did Henry Morgan sack Panama?</label>
+                <input type="number" name="yeat" id="getyear" min="1600" max="1700" /><br />
+                <label for="getally">Who was Henry Morgan working for?</label>
+                <select name="alligence" id="getally">
+                    <option value="no selection">&mdash; Select one &mdash;</option>
+                    <option>None</option>
+                    <option>Portugal</option>
+                    <option>Spain</option>
+                    <option>England</option>
+                    <option>Dutch</option>
+                </select><br />
+                <label for="gettext">Thoughts on Henry Morgan?</label>
+                <textarea name="text" id="gettext" rows="5" cols="40">Click to add text</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Get ready to submit</legend>
+                <label for="getpassword">Guess the password:</label>
+                <input type="password" name="password" id="getpassword" />
+                <input type="hidden" name="hidden" id="gethidden"
+                    value="Unseen, unheard..." /><br />
+            </fieldset>
+    </body>
+</html>
