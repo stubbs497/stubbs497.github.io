@@ -1,3 +1,14 @@
 ul {
     list-style:inside;
 }
+
+ol {
+    list-style: lower-roman;
+    border-style: groove;
+}
+
+table {
+    margin: 1ex 0.5em;
+    padding: 1ex 0.5em; 
+    border-style: double;
+}
