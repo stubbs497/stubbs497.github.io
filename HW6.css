@@ -1,5 +1,5 @@
 h1 {
-    display: inline;
+    
 }
 .multicol { 
     columns: 10em;
@@ -9,4 +9,5 @@ h1 {
 .multicol > h2 { 
     column-span: all; 
     text-align: center;
+    display: inline;
 }
