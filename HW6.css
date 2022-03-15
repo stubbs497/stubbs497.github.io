@@ -10,7 +10,7 @@ h1 {
 .multicol > h2 { 
     column-span: all; 
     text-align: center;
-    line-height: 2.5;
+    line-height: 3em;
 }
 
 .center{
