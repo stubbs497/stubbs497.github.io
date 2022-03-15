@@ -22,4 +22,5 @@ h1 {
 
 .name{
     float: right;
+    padding-right: 50%;
 }
