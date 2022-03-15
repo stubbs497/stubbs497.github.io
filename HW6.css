@@ -1,0 +1,9 @@
+.multicol { 
+    columns: 16em;
+    column-rule: thin solid midnightblue; 
+}
+
+.multicol > h2 { 
+    column-span: all; 
+    text-align: center;
+}
