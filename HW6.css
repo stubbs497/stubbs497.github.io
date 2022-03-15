@@ -13,8 +13,16 @@ h1 {
     line-height: 3em;
 }
 
-.center{
+.left{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: thin solid black;
+}
+
+.right{
+    vertical-align: baseline;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
