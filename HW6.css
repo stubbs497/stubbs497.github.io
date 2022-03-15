@@ -1,3 +1,6 @@
+h1 {
+    display: inline;
+}
 .multicol { 
     columns: 10em;
     column-rule: thin solid midnightblue; 
