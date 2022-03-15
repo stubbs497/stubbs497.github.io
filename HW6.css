@@ -12,9 +12,9 @@ h1 {
 }
 
 img{
-    border: thin solid black;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border: thin solid black;
 }
