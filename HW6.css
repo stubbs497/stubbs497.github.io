@@ -10,3 +10,7 @@ h1 {
     column-span: all; 
     text-align: center;
 }
+
+img{
+    position: relative;
+}
