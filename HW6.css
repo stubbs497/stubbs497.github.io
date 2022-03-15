@@ -28,7 +28,7 @@ h1 {
 }
 
 .name{
-    vertical-align: super;
+    vertical-align: sub;
 }
 
 .refs{
