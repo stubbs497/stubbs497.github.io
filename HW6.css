@@ -28,3 +28,7 @@ h1 {
 .name2{
     float: right;
 }
+
+.refs{
+    float: left;
+}
