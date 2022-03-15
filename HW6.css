@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    color: midnightblue;
 }
 
 .multicol { 
@@ -22,8 +23,12 @@ h1 {
     border: thin solid black;
 }
 
-.name{
+.photo{
     float: right;
+}
+
+.name{
+    vertical-align: super;
 }
 
 .refs{
