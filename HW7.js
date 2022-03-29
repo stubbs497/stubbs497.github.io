@@ -4,7 +4,7 @@ function doExternalFileThing(elt) {
 }
 
 /* -------------- Conditional ------------------------------*/
-function findDayOfWeek(button) {
+function findTimeOfDay(button) {
     let parentElt = button.parentElement;
     let time = (new Date()).getHours();
     
