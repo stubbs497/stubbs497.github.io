@@ -5,13 +5,13 @@ function findTimeOfDay(button) {
     contents = 'Good ';
 
     if (time < 12) {
-        contents = contents + 'Morning';
+        contents = contents + 'Morning!';
     }
     else if (time < 14) {
-        contents = contents + 'Afternoon';
+        contents = contents + 'Afternoon!';
     }
     else {  
-        contents = contents + 'Evening';
+        contents = contents + 'Evening!';
     }
 
     parentElt.innerHTML = contents;
