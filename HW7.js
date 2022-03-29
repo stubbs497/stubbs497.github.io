@@ -20,7 +20,7 @@ function arithemtic(button) {
     let parentElt = button.parentElement;
     let num1 = 6;
     let num2 = 25;
-    contents = num1 + num2;
-    
-    parentElt.innerHTML = contents;
+    console.log = num1 + num2;
+
+    parentElt.innerHTML = console.log;
 }
