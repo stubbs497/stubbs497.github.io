@@ -14,18 +14,22 @@
         </form>
         <h2>Arithmetic</h2>
         <div>
+            <p id="math"></p>
             <script>
                 let num1 = 6;
                 let num2 = 25;
-                console.log = num1 + num2;
+                sum = num1 + num2;
+                document.getElementById("math").innerHTML = num1, "+", num2, "=", sum;
             </script>
         </div>
         <h2>Loop</h2>
         <div>
+            <p id="loop"></p>
             <script>
                 for (let i = 0; i < 10; i++) {
                 console.log(i);
                 }
+                document.getElementById("loop").innerHTML = concole.log(i);
             </script>
         </div>
     </body>
