@@ -26,10 +26,11 @@
         <div>
             <p id="loop"></p>
             <script>
+                let text = "";
                 for (let i = 0; i < 10; i++) {
-                console.log(i);
+                text += i + '<br>';
                 }
-                document.getElementById("loop").innerHTML = console.log(i);
+                document.getElementById("loop").innerHTML = text;
             </script>
         </div>
     </body>
