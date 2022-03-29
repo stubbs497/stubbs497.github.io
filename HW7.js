@@ -6,20 +6,18 @@ function doExternalFileThing(elt) {
 /* -------------- Conditional ------------------------------*/
 function findDayOfWeek(button) {
     let parentElt = button.parentElement;
-    let time = console.log
-    //contents = 'Good ';
+    let time = (new Date()).getHours();
+    
+    contents = 'Good ';
 
     if (time < 12) {
-        //contents = contents + 'Morning';
-        console.log('Good Morning');
+        contents = contents + 'Morning';
     }
     else if (time < 14) {
-        //contents = contents + 'Afternoon';
-        console.log('Good Afternoon');
+        contents = contents + 'Afternoon';
     }
     else {  
-        //contents = contents + 'Evening';
-        console.log('Good Evening');
+        contents = contents + 'Evening';
     }
 
     parentElt.innerHTML = contents;
