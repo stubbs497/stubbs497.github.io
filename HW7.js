@@ -6,7 +6,7 @@ function doExternalFileThing(elt) {
 /* -------------- Conditional ------------------------------*/
 function findDayOfWeek(button) {
     let parentElt = button.parentElement;
-    
+    let time = console.log
     //contents = 'Good ';
 
     if (time < 12) {
