@@ -10,14 +10,13 @@ function findDayOfWeek(button) {
     
     contents = 'Good ';
 
-    if (time <= 11) {
+    if (time < 12) {
         contents = contents + 'Morning';
     }
-    else if (time >= 12) {
+    else if (time < 14) {
         contents = contents + 'Afternoon';
     }
-    
-    else {  // if (daynum == 6) {
+    else {  
         contents = contents + 'Evening';
     }
 
