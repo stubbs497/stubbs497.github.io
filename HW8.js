@@ -14,7 +14,7 @@ function enoughChecked(buttons, enough) {
     numChecked = 0;
     for (button of buttons) {
         if (button.checked) {
-            numChecked = numChecked + 1;
+            numChecked = numChecked;
         }
     }
     return (numChecked >= enough);
