@@ -45,11 +45,12 @@
 	<form action="https://cs.converse.edu/CSC235/formecho.php" method="post" id="postform" onsubmit="return validForm(this);">
 		<fieldset>
 			<div class="inigo">&ldquo;Hello! My name is
-				<input name="nameblank" id="nameblank" />.<span class="flag"></span> You killed my
+				<input name="nameblank" id="nameblank" required 
+				pattern="[A-Z].*"/>.<span class="flag"></span> You killed my
 				father. Prepare to die.&rdquo;<sup><a id="ref1" href="#note1">1</a></sup>
 				(Or not! &#x1F607;)</div>
 			<div class="email"><label for="email">An email address (maybe mine, maybe not)
-					is:</label>
+					is: (format: <var>NNN</var>@<var>NNN</var>.<var>NNN</var>)</label>
 				<input name="email" id="email" type="email" /><span class="flag"></span></div>
 			<div class="graduation"><label>I expect to graduate in:</label>
 				<input type="radio" name="grad-year" value="2022" id="grad-2022" />
