@@ -3,16 +3,9 @@ function validForm(formElt) {
     valid = true;
 
     valid = validButtons(formElt.querySelector('fieldset:nth-of-type(2)'),
-                        'input[type=checkbox]', 'p > span', 2);
+                        'input[type=checkbox]', 'p > span', 1);
     console.log('First validButtons: ' + valid);
-    valid = validButtons(formElt.querySelector('fieldset:nth-of-type(2)'),
-                        'input[name=kingdom]', 'p:nth-of-type(2) > span')
-                && valid;
-    console.log('Second validButtons: ' + valid);
-    valid = validButtons(formElt.querySelector('fieldset:nth-of-type(2)'),
-                        'input[name=keyboard]', 'p:nth-of-type(3) > span')
-                && valid;
-    console.log('Third validButtons: ' + valid);
+
 
     return valid;
 }
