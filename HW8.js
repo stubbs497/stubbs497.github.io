@@ -2,8 +2,8 @@ function validForm(formElt) {
     console.log('validForm called');
     valid = true;
 
-    valid = validButtons(formElt.querySelector('fieldset:nth-of-type(1)'),
-                        'input[type=checkbox]', 'p > span', 1);
+    valid = validButtons(formElt.querySelector('fieldset:nth-of-type(2)'),
+                        'input[type=checkbox]', 'p > span', 2);
     console.log('First validButtons: ' + valid);
     return valid
 } 
@@ -14,7 +14,7 @@ function enoughChecked(buttons, enough) {
     numChecked = 0;
     for (button of buttons) {
         if (button.checked) {
-            numChecked = numChecked;
+            numChecked = numChecked + 1;
         }
     }
     return (numChecked >= enough);
