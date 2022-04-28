@@ -6,19 +6,17 @@
         function createItem() {
             let x = document.createElement("INPUT");
             x.setAttribute("type", "checkbox");
-            document.fieldset.appendChild(x);
+            document.body.appendChild(x);
         }
     </script>
 	<title>Homework Ten, CSC 235</title>
 </head>
 <body>
     <h1>To-Do List</h1>
-    <form id="list">
-        <fieldset>
-            <input type="checkbox" name="group1" value="card">Make Card<br />
-            <input type="checkbox" name="group1" value="shop">Grocery Shop<br />
-            <button onclick="createItem()">Add Item</button>
-        </fieldset>
-    </form>
+    
+    <input type="checkbox" name="group1" value="card">Make Card<br />
+    <input type="checkbox" name="group1" value="shop">Grocery Shop<br />
+    <button onclick="createItem()">Add Item</button>
+        
 </body>
 </html>
