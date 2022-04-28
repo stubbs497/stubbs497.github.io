@@ -1,18 +1,15 @@
-<!--https://stackoverflow.com/questions/19908215/adding-user-input-to-a-list-of-text-items-on-a-html-page-->
+<!--help from: 
+https://stackoverflow.com/questions/19908215/adding-user-input-to-a-list-of-text-items-on-a-html-page
+https://www.techiedelight.com/add-item-html-list-javascript/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
     <script >
         function createItem() {
-            //var text = document.getElementById("add").value;
-            //var li = "<li>" + text + "</li>";
-            //document.createElement("li");
-            //document.getElementById("list").appendChild(li);
             var text = document.getElementById("add").value;
             var node = document.createElement('li');
             node.appendChild(document.createTextNode(text));
-    
             document.querySelector('ul').appendChild(node);
         }
         
@@ -22,7 +19,7 @@
 <body>
     <h1>To-Do List</h1>
     <button value="add to list" onclick="createItem()">Add Item</button>
-    <input type="text" id="add">
+    <input type="text" id="add" required>
     <ul id="list">
         <li>Make Birthday Card</li>
         <li>Grocery Shopping</li>
