@@ -3,20 +3,29 @@
 <head>
 	<meta charset="utf-8" />
     <script >
-        function createItem() {
-            var text = document.getElementById("add").value;
-            var li = "<li>" + text + "</li>";
+        //function createItem() {
+        //   var text = document.getElementById("add").value;
+        //  var li = "<li>" + text + "</li>";
             //document.createElement("li");
             //x.setAttribute("type", "checkbox");
-            document.getElementById("list").appendChild(li);
-        }
+        //  document.getElementById("list").appendChild(li);
+        //}
+        document.getElementById("add").onclick  = function() {
+
+            var node = document.createElement("Li");
+            var text = document.getElementById("user_input").value; 
+            var textnode=document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById("list_item").appendChild(node);
+            }
     </script>
 	<title>Homework Ten, CSC 235</title>
 </head>
 <body>
     <h1>To-Do List</h1>
-    <button value="add to list"onclick="createItem()">Add Item</button>
-    <input type="text" id="add">
+    <!--<button value="add to list" onclick="createItem()">Add Item</button>
+    <input type="text" id="add"> -->
+    <input type="button" id="add" value="Add New">
     <ul id="list">
         <li>Make Birthday Card</li>
         <li>Grocery Shopping</li>
