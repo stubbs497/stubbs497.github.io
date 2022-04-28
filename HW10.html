@@ -4,9 +4,10 @@
 	<meta charset="utf-8" />
     <script >
         function createItem() {
-            let x = document.createElement("INPUT");
-            x.setAttribute("type", "checkbox");
-            <br />
+            const node = document.createElement("input");
+            const textnode = document.createTextNode("read");
+            node.appendChild(textnode);
+            document.getElementById("list").appendChild(node);
         }
     </script>
 	<title>Homework Ten, CSC 235</title>
