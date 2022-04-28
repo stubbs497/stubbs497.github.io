@@ -5,7 +5,7 @@
     <script >
         function createItem() {
             var text = document.getElementById("add").value;
-            //var li = "<li>" + text + "</li>";
+            var li = "<li>" + text + "</li>";
             document.createElement("li");
             document.getElementById("list").appendChild(li);
         }
@@ -15,12 +15,12 @@
 </head>
 <body>
     <h1>To-Do List</h1>
-    <ul id="list">
-        <li>Make Birthday Card</li>
-        <li>Grocery Shopping</li>
-    </ul>
     <button value="add to list" onclick="createItem()">Add Item</button>
-    <input type="text" id="add"> 
+    <input type="text" id="add">
+    <ul id="list">
+        <!--<li>Make Birthday Card</li>
+        <li>Grocery Shopping</li>-->
+    </ul>
         
 </body>
 </html>
