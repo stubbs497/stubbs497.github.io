@@ -4,19 +4,24 @@
 	<meta charset="utf-8" />
     <script >
         function createItem() {
-            let x = document.createElement("INPUT");
-            x.setAttribute("type", "checkbox");
-            document.body.appendChild(x);
+            var text = document.getElementById("add").value;
+            var li = "<li>" + text + "</li>";
+            //document.createElement("li");
+            //x.setAttribute("type", "checkbox");
+            document.getElementById("list").appendChild(li);
         }
     </script>
 	<title>Homework Ten, CSC 235</title>
 </head>
 <body>
     <h1>To-Do List</h1>
-    
-    <input type="checkbox" name="group1" value="card">Make Card<br />
-    <input type="checkbox" name="group1" value="shop">Grocery Shop<br />
+    <input type="text" id="add">
     <button onclick="createItem()">Add Item</button>
+    <ul id="list">
+        <li>Make Birthday Card</li>
+        <li>Grocery Shopping</li>
+    </ul>
+
         
 </body>
 </html>
