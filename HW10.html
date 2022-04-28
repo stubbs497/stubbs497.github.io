@@ -1,0 +1,23 @@
+<!DOCTYPE html>!
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <script >
+        function createItem() {
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "checkbox");
+        }
+    </script>
+	<title>Homework Ten, CSC 235</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form id="list">
+        <fieldset>
+            <button onclick="createItem()">Add Item</button>
+            <input type="checkbox" name="group1" value="card">Make Card<br />
+            <input type="checkbox" name="group1" value="shop">Grocery Shop<br />
+        </fieldset>
+    </form>
+</body>
+</html>
