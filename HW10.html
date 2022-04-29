@@ -12,7 +12,9 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
             node.appendChild(document.createTextNode(text));
             document.querySelector('ul').appendChild(node);
         }
-        
+        function changeItem (){
+            
+        }
     </script>
 	<title>Homework Ten, CSC 235</title>
 </head>
@@ -20,7 +22,9 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
     <h1>To-Do List</h1>
     <fieldset>
         <button value="add to list" onclick="createItem()">Add Item</button>
-        <input type="text" id="add"> 
+        <input type="text" id="add">
+        <button value="change on list" onclick="changeItem()">Change 3rd Item</button>
+        <input type="text" id="change"> 
         <ul id="list">           
         </ul>      
     </fieldset>  
