@@ -8,16 +8,18 @@ https://bobbyhadz.com/blog/javascript-get-nth-child-of-element -->
 	    <meta charset="utf-8" />
         <script>
             function createItem() {
+                var i = 0;
                 var text = document.getElementById("add").value;
                 var node = document.createElement('li');
+                node.setAttribute('id',i++);
                 node.appendChild(document.createTextNode(text));
                 document.querySelector('ul').appendChild(node);
             }
             function changeItem (){
-            var text = document.getElementById("change").value;
-            var third = document.querySelector('#list :nth-child(3)');
-            third.appendChild(document.createTextNode(text));
-            document.querySelector('ul').appendChild(third);
+                var text = document.getElementById("change").value;
+                var third = document.getElementById("3");
+                third.appendChild(document.createTextNode(text));
+                document.querySelector('ul').appendChild(third);
             }
 
         </script>
