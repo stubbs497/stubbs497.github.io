@@ -1,6 +1,7 @@
 <!--help from: 
 https://stackoverflow.com/questions/19908215/adding-user-input-to-a-list-of-text-items-on-a-html-page
-https://www.techiedelight.com/add-item-html-list-javascript/-->
+https://www.techiedelight.com/add-item-html-list-javascript/
+https://bobbyhadz.com/blog/javascript-get-nth-child-of-element -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
             document.querySelector('ul').appendChild(node);
         }
         function changeItem (){
-           const third = document.querySelector('#list li:nth-child(3)')
+           const third = document.querySelector('#list :nth-child(3)')
            console.log(third)
 
         
