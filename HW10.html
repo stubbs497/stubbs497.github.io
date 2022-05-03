@@ -1,31 +1,25 @@
 <!--help from: 
 https://stackoverflow.com/questions/19908215/adding-user-input-to-a-list-of-text-items-on-a-html-page
 https://www.techiedelight.com/add-item-html-list-javascript/
-https://bobbyhadz.com/blog/javascript-get-nth-child-of-element -->
+https://bobbyhadz.com/blog/javascript-get-nth-child-of-element 
+https://www.geeksforgeeks.org/how-to-remove-an-added-list-items-using-javascript/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
     <script >
-        function createItem() {
+       function createItem() {
             var text = document.getElementById("add").value;
-            var number = document.getElementById("number");
-            var li = document.createElement('li');
-            li.setAttribute('id', number.value);
-            li.appendChild(document.createTextNode(number.value));
-            text.appendChild('li');
-            //document.querySelector('ul').appendChild(li)
+            var node = document.createElement('li');
+            node.appendChild(document.createTextNode(text));
+            document.querySelector('ul').appendChild(node);
         }
         function changeItem (){
            var text = document.getElementById("change").value;
-           var number = document.getElementById("number");
-           var third = document.getElementById(number.value);
-           text.removeChild(third)
+           var third = document.querySelector('#list:nth-child(3)');
            third.appendChild(document.createTextNode(text));
-           text.appendChild(third);
+           document.querySelector('ul').appendChild(third);
 
-        
-        }
     </script>
 	<title>Homework Ten, CSC 235</title>
 </head>
