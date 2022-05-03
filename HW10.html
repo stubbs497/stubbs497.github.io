@@ -14,10 +14,10 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
         }
         function changeItem (){
             if (ul < 3){
-                let third = document.getElementById('third').disabled = true;
+                document.getElementById('third').disabled = true;
             }
             else if (ul >= 3){
-                third.disabled = false;
+                document.getElementById("third").disabled = false;
             }
 
             var text = document.getElementById("change").value;
