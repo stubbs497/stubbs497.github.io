@@ -5,24 +5,25 @@ https://bobbyhadz.com/blog/javascript-get-nth-child-of-element
 https://www.geeksforgeeks.org/how-to-remove-an-added-list-items-using-javascript/-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-    <script>
-       function createItem() {
-            var text = document.getElementById("add").value;
-            var node = document.createElement('li');
-            node.appendChild(document.createTextNode(text));
-            document.querySelector('ul').appendChild(node);
-        }
-        function changeItem (){
-           var text = document.getElementById("change").value;
-           var third = document.querySelector('#list :nth-child(3)');
-           third.appendChild(document.createTextNode(text));
-           document.querySelector('ul').appendChild(third);
+    <head>
+	    <meta charset="utf-8" />
+        <script>
+            function createItem() {
+                var text = document.getElementById("add").value;
+                var node = document.createElement('li');
+                node.appendChild(document.createTextNode(text));
+                document.querySelector('ul').appendChild(node);
+            }
+            function changeItem (){
+            var text = document.getElementById("change").value;
+            var third = document.querySelector('#list :nth-child(3)');
+            third.appendChild(document.createTextNode(text));
+            document.querySelector('ul').appendChild(third);
+            }
 
-    </script>
-	<title>Homework Ten, CSC 235</title>
-</head>
+        </script>
+	    <title>Homework Ten, CSC 235</title>
+    </head>
 <body>
     <h1>To-Do List</h1>
     <fieldset>
