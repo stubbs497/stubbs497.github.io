@@ -11,13 +11,13 @@ https://bobbyhadz.com/blog/javascript-get-nth-child-of-element -->
                 var i = 0;
                 var text = document.getElementById("add").value;
                 var node = document.createElement('li');
-                node.setAttribute('id',i++);
+                node.setAttribute("id","i++");
                 node.appendChild(document.createTextNode(text));
                 document.querySelector('ul').appendChild(node);
             }
             function changeItem (){
                 var text = document.getElementById("change").value;
-                var third = document.getElementById("3");
+                var third = document.getElementById("i++");
                 third.appendChild(document.createTextNode(text));
                 document.querySelector('ul').appendChild(third);
             }
