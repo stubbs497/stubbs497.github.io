@@ -12,10 +12,14 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
             node.appendChild(document.createTextNode(text));
             document.querySelector('ul').appendChild(node);
         }
-        function changeItem (){
-            var text = document.getElementById("change").value;
+        function changeItem (formElt){
+            console.log('changeItem called');
+            valid = true;
 
-            
+            valid = validButtons(formElt.querySelector('ul:nth-of-type(3)'),
+                                'input[type=text]', 'p > span', 3);
+            console.log('First validButtons: ' + valid);
+            return valid
         }
     </script>
 	<title>Homework Ten, CSC 235</title>
