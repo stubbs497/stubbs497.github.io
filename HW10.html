@@ -13,14 +13,9 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
             document.querySelector('ul').appendChild(node);
         }
         function changeItem (){
-            if (li < 3){
-                document.getElementById('third').disabled = true;
-            }
-            else if (li >= 3){
-                document.getElementById("third").disabled = false;
-            }
-
             var text = document.getElementById("change").value;
+
+            
         }
     </script>
 	<title>Homework Ten, CSC 235</title>
@@ -30,7 +25,7 @@ https://www.techiedelight.com/add-item-html-list-javascript/-->
     <fieldset>
         <button value="add to list" onclick="createItem()">Add Item</button>
         <input type="text" id="add">
-        <button id="third" value="change on list" onclick="changeItem()">Change 3rd Item</button>
+        <button id="third" value="change on list" disabled onclick="changeItem()">Change 3rd Item</button>
         <input type="text" id="change"> 
         <ul id="list">           
         </ul>      
