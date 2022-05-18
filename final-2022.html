@@ -21,9 +21,10 @@
 
       }
       
-      const btn = document.getElementById('converse-gold').addEventListener('click', changeColor);
+      document.getElementById('converse-gold').addEventListener('click', changeColor);
       function changeColor(){  
         document.getElementById('college_table').style.backgroundColor = "rgb(244, 192, 23)";
+        return false;
       
       };
 
