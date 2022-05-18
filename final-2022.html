@@ -27,10 +27,12 @@
         document.querySelector('.converse').classList.add("goldBG");
        }
 
+       const x = document.getElementById('sher')
+
       function chanegName() {
         var text = document.getElementById('newname');
-        var x = document.querySelector("#sher");
-        x.replaceChild(x,text);
+        x.textContent = text;
+        //x.replaceChild(x,text);
         //x[1].document.getElementById('newname').value;
 
         
