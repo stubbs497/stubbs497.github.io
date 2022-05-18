@@ -32,8 +32,9 @@
       //console.log(document.getElementById('change-name'))
 
       function chanegName() {
+        var text = document.getElementById('change-name');
         var x = document.getElementsByClassName("sherman").cells;
-        x.innerHTML = "NEW CONTENT";
+        x.appendChild(text);
         //x[1].document.getElementById('newname').value;
 
         
