@@ -21,11 +21,10 @@
 
       }
       
-      document.getElementById('converse td').addEventListener('click', changeColor);
+      document.getElementById('converse-gold').addEventListener('click', changeColor);
 
       function changeColor() {  
-        this.style.backgroundColor = ".goldBG";
-        return false;
+        document.querySelector('.converse').classList.add("goldBG");
        }
 
       let btt = document.getElementsByClassName('sherman').addEventListener('click', chanegName)
