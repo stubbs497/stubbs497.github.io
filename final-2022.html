@@ -9,24 +9,24 @@
 
       function showDegF(degC) {
         var degC = document.getElementById(degrees_c).value;
-        var degF = ((9/5) * c + 32);
-        document.getElementById(degrees_c).f;
+        var degF = parseFloat((9/5) * c + 32);
+        document.getElementById(degrees_c).degF;
 
       }
 
       function showDegC(degF) {
         var degF = document.getElementById(degrees_f).value;
-        var degC = ((5/9) * f - 32);
-        document.getElementById(degrees_c).c;
+        var degC = parseFloat((5/9) * f - 32);
+        document.getElementById(degrees_c).degC;
 
       }
       
       document.getElementById('college_table').addEventListener('click', changeColor);
-      function changeColor(){  
+
+      function changeColor() {  
         this.style.backgroundColor = "rgb(244, 192, 23)";
         return false;
-      
-      }
+       }
 
       let btt = document.getElementsByClassName('sherman').addEventListener('click', chanegName)
 
