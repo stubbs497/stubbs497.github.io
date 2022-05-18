@@ -8,16 +8,16 @@
       ////  JAVASCRIPT FOR QUESTIONS 1, 3, and 4 GOES IN THIS SCRIPT ELEMENT
 
       function showDegF(degC) {
-        var degC = document.getElementById(degrees_c).value;
-        var degF = parseFloat((9/5) * c + 32);
-        document.getElementById(degrees_c).degF;
+        //var degC = document.getElementById(degrees_c).value;
+        var degF = parseFloat((9/5) * degC + 32);
+        document.getElementById('degrees_f').value = degF;
 
       }
 
       function showDegC(degF) {
-        var degF = document.getElementById(degrees_f).value;
-        var degC = parseFloat((5/9) * f - 32);
-        document.getElementById(degrees_c).degC;
+        //var degF = document.getElementById(degrees_f).value;
+        var degC = parseFloat((5/9) * degF - 32);
+        document.getElementById('degrees_c').value = degC;
 
       }
       
@@ -27,15 +27,12 @@
         document.querySelector('.converse').classList.add("goldBG");
        }
 
-       //const x = document.getElementById('sher')
+       //help from https://errorsea.com/how-to-change-text-onclick-event-javascript/
 
       function chanegName() {
         var text = document.getElementById('newname').value;
         var x = document.getElementById('sher')
         x.innerHTML = text;
-        //x.replaceChild(x,text);
-        //x[1].document.getElementById('newname').value;
-
         
       }
 
