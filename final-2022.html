@@ -21,13 +21,13 @@
 
       }
       
-      console.log(document.getElementById('converse-gold')); //.addEventListener('click', changeColor);
+      console.log(document.getElementById('converse_gold')); //.addEventListener('click', changeColor);
 
       function changeColor() {  
         document.querySelector('.converse').classList.add("goldBG");
        }
 
-      let btt = document.getElementsByClassName('sherman').addEventListener('click', chanegName)
+      //let btt = document.getElementsByClassName('sherman').addEventListener('click', chanegName)
 
       function chanegName() {
         var text = document.getElementById('newname').value;
@@ -84,7 +84,7 @@
 	<label for="newname">New name:</label>
 	<input type="text" name="newname" id="newname" required />
 	<span class="flag"></span><br />
-	<input type="button" id="converse-gold" value="Converse Gold" />
+	<input type="button" id="converse_gold" value="Converse Gold" />
 	<input type="button" id="change-name" value="Change school name" />
       </fieldset>
     </form>
