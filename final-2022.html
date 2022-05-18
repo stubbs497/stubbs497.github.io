@@ -22,18 +22,14 @@
       }
       
       console.log(document.getElementById('change-name'))
-      //console.log(document.querySelectorAll("form")); //.addEventListener('click', changeColor);
 
       function changeColor() {  
         document.querySelector('.converse').classList.add("goldBG");
        }
 
-      //let btt = document.getElementsByClassName('sherman').addEventListener('click', chanegName)
-      //console.log(document.getElementById('change-name'))
-
       function chanegName() {
         var text = document.getElementById('change-name');
-        var x = document.getElementsByClassName("sherman").rows;
+        var x = document.getElementsById("sher").rows;
         x.appendChild(text);
         //x[1].document.getElementById('newname').value;
 
@@ -96,7 +92,7 @@
       <tr><th>Institution</th><th>Address</th></tr>
       <tr class="converse"><td>Converse University</td>
 	<td>580 E. Main St.<br />Spartanburg, SC 29302</td></tr>
-      <tr class="sherman"><td>Sherman College of Straight Chiropractic</td>
+      <tr class="sherman"><td id="sher">Sherman College of Straight Chiropractic</td>
 	<td>2020 Springfield Rd.<br />Spartanburg, SC 29316</td></tr>
       <tr class="scc"><td>Spartanburg Community College</td>
 	<td>P.O. Box 4386<br />Spartanburg, SC 29305</td></tr>
